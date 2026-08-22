@@ -1,0 +1,38 @@
+{
+  "name": "genpark-prospect-intent-prewarm-outreach-sequencer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Prospect intent scoring and pre-warm outreach sequencer analyzing buying signals to draft personalized multi-channel sales touchpoints.",
+  "author": "genpark",
+  "category": "sales",
+  "tags": [
+    "intent-scoring",
+    "sales-outreach",
+    "prewarm-sequencer",
+    "b2b-leadgen",
+    "fuzzyai"
+  ],
+  "inputs": {
+    "prospect_domain": {
+      "type": "string"
+    },
+    "intent_signals": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "intent_score": {
+      "type": "number"
+    },
+    "intent_tier": {
+      "type": "string"
+    },
+    "outreach_sequence": {
+      "type": "array"
+    },
+    "predicted_reply_rate_pct": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
